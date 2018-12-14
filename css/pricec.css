@@ -1,16 +1,14 @@
 body {
     font-family: Roboto, "Roboto";
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    box-sizing: border-box;
 }
 header {
     background: #27273e;
     height: 76px;
-    
+    margin-bottom: 45px;
 }
-
+.navigator {
+    margin-bottom: 25px;
+}
 .subcontent {
     display: flex;
     justify-content: space-between;    
@@ -42,15 +40,14 @@ a {
 .banner-img {
     width: 100%;
 }
-.sidebar {
-    margin-right: 60px;
-    width: 180px;
+ul {
+    list-style: none;
 }
 .main {
     font-size: 13px;
     text-transform: uppercase; 
     font-weight: 700;
-    color: black;
+    color: #b12167;
     letter-spacing: 1px;
 }
 .menu__main {
@@ -60,21 +57,19 @@ a {
     content: "";
     width: 24px;
     height: 18px;
-    background: url(../img/main.png) center center no-repeat ;
+    background: url(../img/main-gray.png) center center no-repeat ;
     display: inline-block;
     margin-right: 15px;
     vertical-align: middle;
 }
 
-ul {
-    list-style: none;
-}
+
 .comment {
     font-size: 13px;
     text-transform: uppercase; 
     font-weight: 700;
     letter-spacing: 1px;
-    color: #b12167;
+    color: black;
 }
 .tarifs {
     font-size: 13px;
@@ -90,7 +85,7 @@ ul {
     content: "";
     width: 24px;
     height: 18px;
-    background: url(../img/feed.png) center center no-repeat ;
+    background: url(../img/feed-gray.png) center center no-repeat ;
     display: inline-block;
     margin-right: 15px;
     vertical-align: middle;
@@ -107,114 +102,83 @@ ul {
     margin-right: 15px;
     vertical-align: middle;
 }
-.tarifs:hover {
-    color: black;
-    transition: 0.2s;
-}
 .tarifs:hover:before {
     content: "";
     background: url(../img/tarifs-gray.png) center center no-repeat ;
     transition: 0.2s;
 }
-.comment:hover {
+.main:hover:before {
+    content: "";
+    background: url(../img/main.png) center center no-repeat ;
+    transition: 0.2s;
+}
+.main:hover {
     color: black;
     transition: 0.2s;
 }
 .comment:hover:before {
     content: "";
     background: url(../img/feed-gray.png) center center no-repeat ;
-    transition: 0.2s;
+    transition: 0.2WSs;
 }
 .tarifs:hover {
     color: black;
     transition: 0.2s;
 }
-.hang {
-    color: #27273e;
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.feature {
-    width: 750px;
-    display: flex;
-
-}
-.sentence-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    margin-right: 20px;
-}
-
-
-.text-sentence {
-    text-align: center;
-    margin-bottom: 10px;
-}
-.description {
-    margin-bottom: 15px;
-}
-.description-before::before {
-    content: "•";
-    color: #b12167;
-    margin-right: 15px;
-}
-.headline-sentence {
-        font-size: 12px;
-        font-weight: bold;
-        text-transform: uppercase;
+.comment:hover {
+    color: black;
+    transition: 0.5s;
 }
 .maincontent {
     display: flex;
     align-items: baseline;
     justify-content: center;
 }
-.wrapper {
-    color: #27273e;
+.sidebar {
+    margin-right: 60px;
+    width: 180px;
 }
-.offer {
+.rate {
     width: 880px;
-}
-.offer-block {
     display: flex;
-    border-bottom: 1px solid #f5f5f5;
-    margin-bottom: 30px;
-    padding-bottom: 30px;  
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
 }
-
-.offer-img {
-    margin-right: 18px;
+.rate-block-icon {
+    width: 255px;
+    height: 155px;
 }
-.addiction {
-    margin-right: 10px;
+.wrapping {
+    display: flex;
+    flex-direction: column;
+}
+.rate-block {
+    width: 250px;
     text-align: center;
-    width: 20px;
-    height: 20px;
-    background-color: #d2def3;
-    border-radius: 50%; 
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
-
-.vk, .mail, .twitter, .google, .facebook {
-    max-width: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-   
-}
-
-.simpl {
+.friend {
+    width: 700px;
     display: flex;
+    padding-inline-start: 0px;
+    flex-wrap: wrap;
+  
+    align-items: baseline;
 }
-
-.addiction:hover {
-background-color: #b12167;
-transition: 0.2s;
+.friend-block {
+    margin-right: 70px;
+    margin-bottom: 50px;
 }
-
-
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+.grayscale:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: 0.2s;
+}
 .footer-block {
     display: flex;
     align-items: center;
@@ -247,69 +211,39 @@ footer {
 }
 .social-contacts {
     display: flex;
+    align-items: baseline;
+    justify-content: baseline;
 }
 .social-contacts {
     margin-top: 5px;
 }
-
-.pagination-pages {
-    justify-content: center;
+.addiction {
     display: flex;
-}
-
-.pagination__item {
-    width: 24px;
-    height: 24px;
-    border-radius: 5px;
+    
+    margin-right: 10px;
     text-align: center;
-    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-color: #d2def3;
+    border-radius: 50%; 
 }
 
-.pagination__item-link {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    width: 100%;
+.vk, .mail, .twitter, .google, .facebook {
+    max-width: 100%;
+    max-height: 100%;
     height: 100%;
-    vertical-align: middle;
+    width: 100%;
 }
-.pagination__item-link-one {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    background: #27273e;
-    color: white;
+.addiction:hover {
+    background-color: #b12167;
+    transition: 0.2s;
+    }
+.link {
+    font-size: 14px;
+    color: #27273e;
+}
+.link-one {
+    color: #b12167;
+    text-decoration: underline;
 }
 
-.pagination__list {
-    color: #000;
-    margin-left: 20px;
-}
-.pagination-choice {
-    margin-right: 20px;
-}
-.pagination__item-link:hover {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    background: #27273e;
-    color: white;
-}
-.pagination__prev {
-    color: #bdbcbc;
-}
-.pagination__next {
-    color: #221f1f;
-}
-.news {
-    margin-bottom: 60px;
-}
-.pagination-number-block {
-    margin-bottom: 70px;
-}
-
-.pagination__item-link, .pagination__item-link-one {
-    line-height: 24px;
-}
