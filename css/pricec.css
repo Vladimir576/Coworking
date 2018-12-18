@@ -1,7 +1,7 @@
 body {
     font-family: Roboto, "Roboto";
 }
-header {
+ header {
     background: #27273e;
     height: 76px;
     margin-bottom: 45px;
@@ -37,9 +37,7 @@ a {
     color: #b12167;
     font-weight: 500;
 }
-.banner-img {
-    width: 100%;
-}
+
 ul {
     list-style: none;
 }
@@ -85,7 +83,7 @@ ul {
     content: "";
     width: 24px;
     height: 18px;
-    background: url(../img/feed-gray.png) center center no-repeat ;
+    background: url(../img/feed.png) center center no-repeat ;
     display: inline-block;
     margin-right: 15px;
     vertical-align: middle;
@@ -97,15 +95,21 @@ ul {
     content: "";
     width: 24px;
     height: 18px;
-    background: url(../img/tarifs.png) center center no-repeat ;
+    background: url(../img/tarifs-gray.png) center center no-repeat ;
     display: inline-block;
     margin-right: 15px;
     vertical-align: middle;
 }
-.tarifs:hover:before {
+.comment:hover::before {
     content: "";
-    background: url(../img/tarifs-gray.png) center center no-repeat ;
+    background: url(../img/feed-gray.png);
     transition: 0.2s;
+}
+.tarifs {
+    color: black;
+}
+.comment {
+    color: #b12167;
 }
 .main:hover:before {
     content: "";
@@ -119,7 +123,7 @@ ul {
 .comment:hover:before {
     content: "";
     background: url(../img/feed-gray.png) center center no-repeat ;
-    transition: 0.2WSs;
+    transition: 0.2s;
 }
 .tarifs:hover {
     color: black;
@@ -163,7 +167,6 @@ ul {
     display: flex;
     padding-inline-start: 0px;
     flex-wrap: wrap;
-  
     align-items: baseline;
 }
 .friend-block {

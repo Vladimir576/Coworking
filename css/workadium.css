@@ -8,7 +8,6 @@ body {
 header {
     background: #27273e;
     height: 76px;
-    
 }
 
 .subcontent {
@@ -252,7 +251,7 @@ footer {
     margin-top: 5px;
 }
 
-.pagination-pages {
+ .pagination-pages {
     justify-content: center;
     display: flex;
 }
