@@ -167,8 +167,10 @@
                                 <div class="pagination-choice">Страница 1 из 7</div>
                                 <li class="pagination__item">
                                     <a href="#" class="pagination__prev">
-                                        < </a> </li> <li class="pagination__item">
-                                            <a href="#" class="pagination__item-link-one">1</a>
+                                        &lt; </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__item-link-one">1</a>
                                 </li>
                                 <li class="pagination__item">
                                     <a href="#" class="pagination__item-link">2</a>
@@ -210,7 +212,7 @@
                             <h2 class="label-h">Оставить отзыв</h2>
                         </div>
                         <div class="form">
-                            <form action="">
+                            <form>
                                 <div class="inputs">
                                     <div class="one-strok">
                                         <div class="your-name">
@@ -224,7 +226,7 @@
                                     </div>
                                     <div class="two-strok">
                                         <div class="text-for-comment title-form">Текст отзыва</div>
-                                        <textarea name="" id="" cols="30" rows="10" placeholder="Мне понравилось"></textarea>
+                                        <textarea cols="30" rows="10" placeholder="Мне понравилось"></textarea>
                                     </div>
                                 </div>
                                 <div class="box">
@@ -232,11 +234,18 @@
                                         <strong class="button-text">Отправить</strong>
                                     </button>
                                     <div class="title-box">Отображать фото в отзыве?</div>
-                                    <input type="checkbox" id="roger" name="vibor"  checked>
-                                    <label for="roger" class="roger">Да</label>
-                                    <input type="checkbox" id="deny" name="vibor" >
-                                    <label for="roger" class="" >Нет</label>
-
+                                    <div class="rewiews__radio">
+                                        <label class="radio-label">
+                                            <input class="radio-input" type="radio" name="choice" checked>
+                                            <div class="radio-fake-before"></div>
+                                            <div class="radio-title"> Да </div>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input class="radio-input" type="radio" name="choice">
+                                            <div class="radio-fake-before"></div>
+                                            <div class="radio-title"> Нет </div>
+                                        </label>
+                                    </div>
                                 </div>
                             </form>
                         </div>
