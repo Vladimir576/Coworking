@@ -16,7 +16,7 @@
 <body>
     <div class="page">
 
-            <!-- Старайся не использовать margin замени все марджины на paddind 8px -->
+        <!-- Старайся не использовать margin замени все марджины на paddind 8px -->
 
         <header class="header">
             <div class="subcontent">
@@ -39,14 +39,14 @@
             <aside class="sidebar">
                 <nav class="navigation">
                     <ul class="menu">
-                        <!-- Зачем ты для li используешь разные классы, ведь они идентичны?  -->
-                        <li class="menu__main">
+
+                        <li class="menu">
                             <a href="../pages/workadium.html" class="main">Главная</a>
                         </li>
-                        <li class="menu__comment">
+                        <li class="menu">
                             <a href="../pages/comment.html" class="comment">Отзывы</a>
                         </li>
-                        <li class="menu__tarifs">
+                        <li class="menu">
                             <a href="../pages/pricec.html" class="tarifs">Тарифы</a>
                         </li>
                     </ul>
@@ -54,25 +54,25 @@
             </aside>
             <div class="wrapper">
                 <div class="services">
-                    <h2 class="hang">Особенности</h2> <!-- почему заголовок называешь hang? называй как title  -->
+                    <h2 class="title">Особенности</h2>
                     <ul class="feature">
                         <li class="sentence-block">
                             <div class="icon-sentence">
                                 <img class="flower " src="../img/flower.png" alt="">
                             </div>
-                            <div class="headline-sentence"> <!--зачем сделал тут лишнию обертку? можешь просто для h2задать класс title-headline -->
-                                <h2>Уникальность</h2>
+                            <div class="headline-sentence">
+                                <h2 class="headline-sentence">Уникальность</h2>
                             </div>
-                            <div> <!-- зачем тут лишний див?-->
+                            <div>
                                 <p class="text-sentence">
                                     Создан для вашего комфортного отдыха
                                 </p>
                             </div>
                             <div class="desk">
-                                <!-- зачем description-before???  ты можешь добавить :before сразу к description и марджин замени на паддинг -->
-                                <div class="description description-before">Кофе/чай</div>
-                                <div class="description description-before">Шкаф (5кг)</div>
-                                <div class="description description-before">Рабочее место</div>
+
+                                <div class="description">Кофе/чай</div>
+                                <div class="description">Шкаф (5кг)</div>
+                                <div class="description">Рабочее место</div>
                             </div>
                         </li>
                         <li class="sentence-block">
@@ -120,14 +120,18 @@
                             <div class="offer-img">
                                 <img src="../img/black-dump.png" alt="">
                             </div>
-                            <div class="boot"> <!-- задай стиль display: flex; и flex-direction: column; -->
-                                <div class="offer-date"> <!--зачем div-->
+                            <div class="boot">
+                                
+                                <div class="offer-date">
+                                    
                                     <time> 12.10.2016 </time>
                                 </div>
-                                <div class="offer-headline"><!--зачем div-->
+                                <div class="offer-headline">
+                                    <!--зачем div 1)ты говорила див всему задавать и без дива оно ровно не выстраивается-->
                                     <h3>Черная дыра скидок</h3>
                                 </div>
-                                <div class="offer-text"><!--зачем div-->
+                                <div class="offer-text">
+                                    
                                     <p>
                                         Ключевым технологическим партнером GrowUp является дата-центр Миран,
                                         расположенный

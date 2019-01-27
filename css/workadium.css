@@ -52,7 +52,7 @@ a {
     color: black;
     letter-spacing: 1px;
 }
-.menu__main {
+.menu {
     margin-bottom: 30px;
 }
 .main::before {
@@ -82,7 +82,7 @@ ul {
     letter-spacing: 1px;
     color: #b12167;
 }
-.menu__comment {
+.menu {
     margin-bottom: 30px;
 }
 .comment::before {
@@ -94,7 +94,7 @@ ul {
     margin-right: 15px;
     vertical-align: middle;
 }
-.menu__tarifs {
+.menu {
     margin-bottom: 30px;
 }
 .tarifs::before {
@@ -156,10 +156,14 @@ ul {
 .description {
     margin-bottom: 15px;
 }
-.description-before::before {
+.description::before {
     content: "•";
     color: #b12167;
-    margin-right: 15px;
+    padding-right: 15px;
+}
+.boot {
+    display: flex; 
+    flex-direction: column;
 }
 .headline-sentence {
         font-size: 12px;
