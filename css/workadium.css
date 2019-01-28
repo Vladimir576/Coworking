@@ -33,7 +33,10 @@ header {
 a {
     text-decoration: none;
 }
-
+li {
+    margin: 0;
+    padding: 0;
+}
 .grapchics {
     color: #b12167;
     font-weight: 500;
@@ -82,8 +85,12 @@ ul {
     letter-spacing: 1px;
     color: #b12167;
 }
-.menu {
-    margin-bottom: 30px;
+.menu__li {
+    padding: 15px;
+}
+.title {
+    margin: 0;
+    padding: 20px;
 }
 .comment::before {
     content: "";
@@ -154,7 +161,7 @@ ul {
     margin-bottom: 10px;
 }
 .description {
-    margin-bottom: 15px;
+    padding: 8px;
 }
 .description::before {
     content: "•";
@@ -175,9 +182,7 @@ ul {
     align-items: baseline;
     justify-content: center;
 }
-.wrapper {
-    color: #27273e;
-}
+
 .offer {
     width: 880px;
 }

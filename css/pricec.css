@@ -40,6 +40,11 @@ a {
 
 ul {
     list-style: none;
+    
+}
+li {
+    margin: 0;
+    padding: 0;
 }
 .main {
     font-size: 13px;
@@ -48,8 +53,12 @@ ul {
     color: #b12167;
     letter-spacing: 1px;
 }
-.menu__main {
-    margin-bottom: 30px;
+.menu__li {
+    padding: 15px;
+}
+.title {
+    margin: 0;
+    padding: 20px;
 }
 .main::before {
     content: "";
@@ -76,9 +85,7 @@ ul {
     letter-spacing: 1px;
     color: #b12167;
 }
-.menu__comment {
-    margin-bottom: 30px;
-}
+
 .comment::before {
     content: "";
     width: 24px;
@@ -88,9 +95,7 @@ ul {
     margin-right: 15px;
     vertical-align: middle;
 }
-.menu__tarifs {
-    margin-bottom: 30px;
-}
+
 .tarifs::before {
     content: "";
     width: 24px;
